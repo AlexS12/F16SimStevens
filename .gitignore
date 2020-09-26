@@ -13,3 +13,7 @@
 *.mod
 *.smod
 
+# Julia
+Manifest.toml
+
+*.log

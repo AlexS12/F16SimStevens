@@ -1,6 +1,4 @@
-using F16SimStevens
-using Test
+using SafeTestsets
 
-@testset "F16SimStevens.jl" begin
-    # Write your tests here.
-end
+@safetestset "RK4" begin include("rk4.jl") end
+@safetestset "SixDOF" begin include("sixdof.jl") end

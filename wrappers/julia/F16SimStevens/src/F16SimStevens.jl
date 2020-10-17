@@ -3,7 +3,10 @@ module F16SimStevens
 using Libdl
 
 
-const DLL = "../../../bin/f16"
+const DLL = joinpath(
+    dirname(pathof(F16SimStevens)),
+     "..", "..", "..", "..", "bin", "f16",
+    )
 
 
 function adc(vt::Float64, alt::Float64)
